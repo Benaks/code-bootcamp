@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("pattern-quotes.svg"), url("pattern-bg.svg"), url("pattern-curve.svg");
+    background-repeat: no-repeat,  no-repeat ,no-repeat;
+    background-position: top 140px left 200px,  right, bottom left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 80%;
+    height: 80%;
+    display: flex;
+}
+
+.left{
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.right{
+    height: 100%;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+     
+}
+
+.right img{
+    width: 100%;
+    height: 100%;
+    position:relative;
+    box-shadow: 0px 10px 20px -9px hsl(240, 1%, 56%);  
+
+}
+p{
+    font-size: 32px;
+    color: hsl(240, 38%, 20%);
+    padding-bottom: 40px;
+    width: 600px;
+    z-index: 1;
+}
+
+.name-prof{
+    display:flex;
+}
+#prof{
+    color:  hsl(240, 18%, 77%);
+    padding-left: 10px;
+    font-weight: 500;
+    
+}
+h3{
+    color: hsl(240, 38%, 20%);
+}
+
+#prev{
+    width: 15px;
+    height: 15px;
+}
+#next{
+    margin-left: 40px;
+    width: 15px;
+    height: 15px;
+}
+
+#prev , #next:hover{
+    cursor: pointer;
+}
+.buttons{
+    background-color: white;
+    border-radius: 30px;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    margin-left: 2em;
+    margin-bottom: -1em;
+    justify-content: center;
+    position: absolute;
+    box-shadow: 0px 10px 20px -9px hsl(255, 2%, 50%);  
+    
+}
+@media(max-width:700px){
+    body{
+        width: 100vw;
+        height: 100vh;
+        background-image: url("pattern-quotes.svg"), url("pattern-bg.svg"), url("pattern-curve.svg");
+        background-repeat: no-repeat,  no-repeat ,no-repeat;
+        background-position:top 400px center,  top 30px center, bottom left;
+        display: flex;
+        background-size: 30% , 23rem ,300px;
+        align-items: center;
+        justify-content: center;
+    }
+   .container{
+       flex-direction: column-reverse;
+       width: 100%;
+       height: 100%;
+       align-items: center
+   } 
+   .left{
+      width: 90%;
+      text-align: center;
+   }
+   .left p{
+       width: 100%;
+       text-align: center;
+       font-size: 23px;
+   }
+   .name-prof{
+       flex-direction: column;
+   }
+   .right{
+       width: 80%;
+       height: 60%;
+       padding-top: 60px;
+       padding-bottom: 20px;
+       justify-content: end ;
+   }
+   .right img{
+       width: 100%;
+       height: 90%;
+   }
+   .buttons{
+       align-self: center;
+       justify-self: center;
+       margin-bottom: -1.5em;
+       margin-left: 0em;
+    box-shadow: 0px 10px 20px -9px hsl(240, 1%, 56%);  
+       
+   }
+   
+}
+.attribution { font-size: 11px; text-align: center;
+    padding-top: 100px;
+ }
+    .attribution a { color: hsl(228, 45%, 44%); }
